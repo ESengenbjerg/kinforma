@@ -683,11 +683,11 @@ footer {
   border-bottom: 1px solid black;
   margin-top: 30px;
 }
-.footerBorders h1 {
+.footerBold {
   font-size: 16px;
   font-weight: 600;
 }
-.footerBorders h2 {
+.footerThin {
   font-size: 14px;
   font-weight: 400;
 }
@@ -707,12 +707,11 @@ footer {
   width: 149.67px;
   margin-top: -40px;
 }
-.footerOmOss h1,
-h2 {
+.footerOmOss p {
   padding-top: 0px;
   padding-bottom: 0px;
 }
-.footerOmOss h2 {
+.footerOmOss .footerThin {
   margin-top: 6px;
   margin-bottom: 6px;
 }
@@ -721,12 +720,11 @@ h2 {
   margin-top: -30px;
   margin-bottom: -60px;
 }
-.footerSupport h1,
-h2 {
+.footerSupport p {
   padding-top: 0px;
   padding-bottom: 0px;
 }
-.footerSupport h2 {
+.footerSupport .footerThin {
   margin-top: 6px;
   margin-bottom: 6px;
 }
@@ -737,7 +735,7 @@ h2 {
   justify-content: space-between;
   margin-top: 28px;
 }
-.footerBottomElements h2 {
+.footerBottomElements .footerThin {
   font-size: 8px;
   font-weight: 400;
   margin: 0px;
@@ -769,7 +767,7 @@ h2 {
   .footerBorders {
     margin-top: 60px;
   }
-  .footerBottomElements h2 {
+  .footerBottomElements .footerThin {
     font-size: 14px;
     font-weight: 400;
     margin: 0px;
@@ -780,16 +778,14 @@ h2 {
     padding-top: 8px;
     padding-bottom: 8px;
   }
-  .footerOmOss h1,
-  h2 {
+  .footerOmOss p {
     padding-top: 8px;
     padding-bottom: 8px;
   }
   .footerSupport {
     margin-top: 0px;
   }
-  .footerSupport h1,
-  h2 {
+  .footerSupport p {
     padding-top: 8px;
     padding-bottom: 8px;
   }
