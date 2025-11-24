@@ -418,23 +418,6 @@ section.location {
 
 /* FOOTER */
 
-footer {
-  margin: 10%;
-}
-
-ul {
-  list-style-type: none;
-  padding-inline-start: 0;
-}
-
-footer p {
-  margin-bottom: 10%;
-}
-
-footer ul {
-  margin-bottom: 15%;
-}
-
 /* ----- MEDIA QUERY ----- */
 
 @media (min-width: 900px) {
