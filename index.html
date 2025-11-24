@@ -3,7 +3,309 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kinforma</title>
+    <title>Greybox Layout</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Michroma&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+
+  <body>
+    <main>
+      <nav>
+        <div class="mobileNavbar">
+          <div class="logo">
+            <img src="pear.png" alt="pear logo" />
+          </div>
+          <!-- <div class="navGap"></div> -->
+          <div class="navFlex">
+            <img src="material-symbols_menu-rounded.png" alt="Hamburger menu" />
+            <img src="iconamoon_profile-fill.png" alt="Icon person" />
+            <img src="mdi_cart.png" alt="Cart symbol" />
+            <img src="mdi_heart.png" alt="Heart symbol" />
+          </div>
+        </div>
+
+        <div class="desktopNavbar">
+          <div class="desktopNavbarLogo">
+            <img src="blackLogo.png" alt="Kinforma logo" />
+          </div>
+
+          <div class="desktopNavFlex">
+            <p>Hem</p>
+            <div class="menuDrop">
+              <p>Om oss</p>
+              <img class="arrow" src="arrow.png" alt="drop down menu" />
+            </div>
+            <div class="menuDrop">
+              <p>Produkter</p>
+              <img class="arrow" src="arrow.png" alt="drop down menu" />
+            </div>
+            <div class="menuDrop">
+              <p>Kollektion</p>
+              <img class="arrow" src="arrow.png" alt="drop down menu" />
+            </div>
+            <img src="mdi_cart.png" alt="Cart symbol" />
+            <img src="mdi_heart.png" alt="Heart symbol" />
+          </div>
+        </div>
+      </nav>
+      <header>
+        <img
+          class="backgroundHeader"
+          src="headerBG.png"
+          alt="Schackrutebakgrund"
+        />
+        <div class="headerText">
+          <h2>Designad för att växa</h2>
+          <p class="headerP">
+            Designad för barn som växer och leker. Vår intelligenta jacka
+            anpassar sig och minskar onödig konsumption
+          </p>
+          <div class="headerButtons">
+            <button>Utforska jackan</button>
+            <button>Se kollektionen</button>
+          </div>
+        </div>
+      </header>
+
+      <!-- Chat bot! -->
+      <img src="chat-bot.png" alt="AI bot" class="chat-icon" />
+
+      <h2 class="nyheter">Nyheter!</h2>
+
+      <section class="karusell">
+        <div class="cards-wrapper">
+          <article class="card">
+            <img src="dottedGrid.png" />
+            <h2>Jackor</h2>
+            <p>Uttryck dig med roliga märken…</p>
+          </article>
+
+          <article class="card">
+            <img src="dottedGrid.png" />
+            <h2>Accessoarer</h2>
+            <p>Se alla våra accessoarer…</p>
+          </article>
+
+          <article class="card">
+            <img src="dottedGrid.png" />
+            <h2>Något mer</h2>
+            <p>Artikel 3</p>
+          </article>
+
+          <article class="card">
+            <img src="dottedGrid.png" />
+            <h2>Jackor</h2>
+            <p>Uttryck dig med roliga märken…</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="textBox">
+        <h2>Framtidens barnjacka</h2>
+        <p>
+          En intelligent jacka som växer med ditt barn och minskar onödig
+          konsumption genom smart design
+        </p>
+      </section>
+
+      <section class="sectionJacka">
+        <img class="greyJacket" src="jacka.png" />
+        <img class="jacketDot item1" src="jacketCircle.png" />
+        <img class="jacketDot item2" src="jacketCircle.png" />
+        <img class="jacketDot item3" src="jacketCircle.png" />
+        <button>Utforska jackan</button>
+      </section>
+
+      <section class="produktvisning">
+        <article class="productCard">
+          <div class="productCardBorder">
+            <img src="headerBG.png" />
+            <div class="produktText">
+              <h3>Grow coat</h3>
+              <p>från 1499 SEK</p>
+            </div>
+          </div>
+          <div class="configBox coatConfig">
+            <div class="colorBox coatConfigRed"></div>
+            <div class="colorBox coatConfigYellow"></div>
+            <div class="colorBox coatConfigGreen"></div>
+            <div class="colorBox coatConfigBlue"></div>
+          </div>
+          <button>Shoppa</button>
+        </article>
+
+        <article class="productCard">
+          <div class="productCardBorder">
+            <img src="headerBG.png" />
+            <div class="produktText">
+              <h3>KinCharm</h3>
+              <p>från 1499 SEK</p>
+            </div>
+          </div>
+          <div class="configBox charmConfig">
+            <div class="colorBox charmConfigRed"></div>
+            <div class="colorBox charmConfigYellow"></div>
+            <div class="colorBox charmConfigGreen"></div>
+            <div class="colorBox charmConfigBlue"></div>
+          </div>
+          <button>Shoppa</button>
+        </article>
+
+        <article class="productCard">
+          <div class="productCardBorder">
+            <img src="headerBG.png" />
+            <div class="produktText">
+              <h3>GrowBits</h3>
+              <p>från 345 SEK</p>
+            </div>
+          </div>
+          <div class="configBox bitsConfig">
+            <div class="colorBox bitsConfigRed"></div>
+            <div class="colorBox bitsConfigYellow"></div>
+            <div class="colorBox bitsConfigGreen"></div>
+            <div class="colorBox bitsConfigBlue"></div>
+          </div>
+          <button>Shoppa</button>
+        </article>
+
+        <article class="productCard">
+          <div class="productCardBorder">
+            <img src="headerBG.png" />
+            <div class="produktText">
+              <h3>KinTag</h3>
+              <p>från 899 SEK</p>
+            </div>
+          </div>
+          <div class="configBox tagConfig">
+            <div class="colorBox tagConfigRed"></div>
+            <div class="colorBox tagConfigYellow"></div>
+            <div class="colorBox tagConfigGreen"></div>
+            <div class="colorBox tagConfigBlue"></div>
+          </div>
+          <button>Shoppa</button>
+        </article>
+
+        <article class="productCard">
+          <div class="productCardBorder">
+            <img src="headerBG.png" />
+            <div class="produktText">
+              <h3>Patches</h3>
+              <p>från 399 SEK</p>
+            </div>
+          </div>
+          <div class="configBox patchesConfig">
+            <div class="colorBox patchesConfigRed"></div>
+            <div class="colorBox patchesConfigYellow"></div>
+            <div class="colorBox patchesConfigGreen"></div>
+            <div class="colorBox patchesConfigBlue"></div>
+          </div>
+          <button>Shoppa</button>
+        </article>
+
+        <div class="greyBox"></div>
+      </section>
+
+      <section class="nextGreyBox"></section>
+
+      <section class="recycle">
+        <h2>Bra för barn. Bra för planeten.</h2>
+        <p class="recycleP">
+          Vi designar produkter som växer med barnet, håller längre och minskar
+          avfall.
+        </p>
+
+        <div class="argumentDesktop">
+          <article class="argument">
+            <div>
+              <div class="miniIcon">
+                <img src="clock.png" alt="klocka" />
+              </div>
+              <h3>3+ År</h3>
+            </div>
+            <p>Genomsnittlig användningstid</p>
+          </article>
+
+          <article class="argument">
+            <div>
+              <div class="miniIcon">
+                <img src="leaf.png" alt="blad" />
+              </div>
+              <h3>100%</h3>
+            </div>
+            <p>återvinningsbara fibrer</p>
+          </article>
+
+          <article class="argument">
+            <div>
+              <div class="miniIcon">
+                <img src="skiftnyckel.png" alt="skiftnyckel" />
+              </div>
+              <h3>Easy fix</h3>
+            </div>
+            <p>Repareringsbar design</p>
+          </article>
+        </div>
+
+        <button class="readMore">LÄS MER</button>
+      </section>
+
+      <section class="aboutUs">
+        <h3>Om Kinforma</h3>
+        <p>Kläder som växer, håller längre och gör skillnad.</p>
+        <p>
+          Vi bygger en hållbar kollektion med smart design, reparationsvänliga
+          lösningar och återvinningsbara material, lekfullt och framtidssäker.
+        </p>
+      </section>
+
+      <section class="newsletter">
+        <h3>Bli en del av Kinforma</h3>
+        <p>
+          Var först med att uppleva framtidens barnmode och få exklusiv tillgång
+        </p>
+        <div class="signUp">
+          <input id="signUpBox" placeholder="Din e-post" />
+          <button>Prenumerera</button>
+        </div>
+        <p>Genom att prenumerera godkänner du våra villkor</p>
+      </section>
+
+      <section class="location">
+        <div class="textLocation">
+          <h3>Vart håller vi hus?</h3>
+          <p>The Location</p>
+          <p>1234 Garden Boulevard</p>
+          <p>City, ZZ 98765</p>
+        </div>
+        <div class="imgLocation">
+          <img src="GoogleMap.png" alt="Google Location" />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <h3>Kinforma</h3>
+      <p>Smart mode för framtidens barn</p>
+
+      <ul>
+        <h3>Om oss</h3>
+
+        <li>Vår vision</li>
+        <li>Kollektion</li>
+        <li>Hur fungerar det?</li>
+      </ul>
+
+      <ul>
+        <h3>Support</h3>
+        <li>Kontakt</li>
+        <li>Support</li>
+        <li>Användarvillkor</li>
+      </ul>
+    </footer>
+  </body>
 </html>
