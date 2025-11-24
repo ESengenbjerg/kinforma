@@ -767,16 +767,24 @@ footer {
 }
 
 .footerBottomElements {
+  background-color: green;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 28px;
+  padding-top: 28px;
+  padding-bottom: 20px;
+  margin-left: -20px;
+  margin-right: -20px;
 }
 .footerBottomElements .footerThin {
   font-size: 8px;
   font-weight: 400;
   margin: 0px;
   padding: 0px;
+  padding-left: 20px;
+}
+.footerBottomElements img {
+  padding-left: 20px;
 }
 
 @media (min-width: 900px) {
@@ -799,16 +807,24 @@ footer {
     margin-left: 80px;
     margin-right: 80px;
     margin-top: 70px;
-    margin-bottom: 40px;
   }
   .footerBorders {
     margin-top: 60px;
+  }
+  .footerBottomElements {
+    padding-bottom: 40px;
+    margin-left: -80px;
+    margin-right: -80px;
   }
   .footerBottomElements .footerThin {
     font-size: 14px;
     font-weight: 400;
     margin: 0px;
     padding: 0px;
+    padding-left: 80px;
+  }
+  .footerBottomElements img {
+    padding-right: 80px;
   }
   .footerProdukter h1,
   h2 {
