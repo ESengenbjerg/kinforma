@@ -535,11 +535,6 @@ section.location {
     margin-bottom: 10%;
   }
 
-  /* Section: TextBox */
-  .textBox {
-    text-align: center;
-  }
-
   /* ----- Section: Jackan ----- */
   /* ----- INTE KLAR ----- */
   .sectionJacka {
@@ -569,6 +564,20 @@ section.location {
   .item3 {
     top: 70%;
     left: 50%;
+  }
+
+  .textJacka {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    width: 25vw;
+    text-align: center;
+    text-align: end;
+  }
+
+  .jackaHeader {
+    font-size: 3rem;
+    margin-bottom: 0;
   }
 
   /* Section: Produktvisning */
@@ -677,11 +686,27 @@ section.location {
   display: none;
 }
 
-.footerLogoDesktop {display: none;}
-.footerLogoMobile {display: block; width: 103.9px; height: 16.46px;}
-.footerSocialsDesktop {display: none;}
-.footerSocialsMobile {display: block; order: -1; width: 54.85px; padding-bottom: 10px; margin-top: -15px;}
-.footerProdukter {display: none;}
+.footerLogoDesktop {
+  display: none;
+}
+.footerLogoMobile {
+  display: block;
+  width: 103.9px;
+  height: 16.46px;
+}
+.footerSocialsDesktop {
+  display: none;
+}
+.footerSocialsMobile {
+  display: block;
+  order: -1;
+  width: 54.85px;
+  padding-bottom: 10px;
+  margin-top: -15px;
+}
+.footerProdukter {
+  display: none;
+}
 
 footer {
   margin-left: 20px;
