@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: white;
+  background-color: #fbfbf5;
   font-family: "IBM Plex Sans", sans-serif;
 }
 main {
@@ -643,128 +643,159 @@ section.location {
   transition: transform 0.4 ease;
 } */
 
-
-.footerLogoDesktop {display: none;}
-.footerLogoMobile {display: block; width: 103.9px; height: 16.46px;}
-.footerSocialsDesktop {display: none;}
-.footerSocialsMobile {display: block; order: -1;  height: 13.71px; width: 54.85px; padding-bottom: 10px; margin-top: -15px;}
-.footerProdukter {display: none;}
+.footerLogoDesktop {
+  display: none;
+}
+.footerLogoMobile {
+  display: block;
+  width: 103.9px;
+  height: 16.46px;
+}
+.footerSocialsDesktop {
+  display: none;
+}
+.footerSocialsMobile {
+  display: block;
+  order: -1;
+  height: 13.71px;
+  width: 54.85px;
+  padding-bottom: 10px;
+  margin-top: -15px;
+}
+.footerProdukter {
+  display: none;
+}
 
 footer {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 40px;
-    margin-bottom: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 40px;
+  margin-bottom: 5px;
 }
 
 .footerBorders {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    font-family: "IBM Plex Serif";
-    margin-top: 30px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-family: "IBM Plex Serif";
+  margin-top: 30px;
 }
 .footerBorders h1 {
-    font-size: 16px;
-    font-weight: 600;
+  font-size: 16px;
+  font-weight: 600;
 }
 .footerBorders h2 {
-    font-size: 14px;
-    font-weight: 400;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .footerTextWall {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    margin-top: 60px;
-    margin-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 60px;
+  margin-bottom: 120px;
 }
 
 .footerProdukter {
-    width: 149.67px;
+  width: 149.67px;
 }
 .footerOmOss {
-    width: 149.67px;
-    margin-top: -40px;
+  width: 149.67px;
+  margin-top: -40px;
 }
-.footerOmOss h1, h2 {
-    padding-top: 0px;
-    padding-bottom: 0px;
+.footerOmOss h1,
+h2 {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 .footerOmOss h2 {
-    margin-top: 6px;
-    margin-bottom: 6px;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 .footerSupport {
-    width: 149.67px;
-    margin-top: -30px;
-    margin-bottom: -60px;
+  width: 149.67px;
+  margin-top: -30px;
+  margin-bottom: -60px;
 }
-.footerSupport h1, h2 {
-    padding-top: 0px;
-    padding-bottom: 0px;
+.footerSupport h1,
+h2 {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 .footerSupport h2 {
-    margin-top: 6px;
-    margin-bottom: 6px;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 
 .footerBottomElements {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 28px;
 }
 .footerBottomElements h2 {
-    font-size: 8px;
-    font-weight: 400;
-    margin: 0px;
-    padding: 0px;
+  font-size: 8px;
+  font-weight: 400;
+  margin: 0px;
+  padding: 0px;
 }
 
 @media (min-width: 900px) {
-    .footerLogoDesktop {display: block;}
-    .footerLogoMobile {display: none;}
-    .footerSocialsDesktop {display: block;}
-    .footerSocialsMobile {display: none;}
-    .footerProdukter {display: block;}
-    footer {
+  .footerLogoDesktop {
+    display: block;
+  }
+  .footerLogoMobile {
+    display: none;
+  }
+  .footerSocialsDesktop {
+    display: block;
+  }
+  .footerSocialsMobile {
+    display: none;
+  }
+  .footerProdukter {
+    display: block;
+  }
+  footer {
     margin-left: 80px;
     margin-right: 80px;
     margin-top: 70px;
     margin-bottom: 40px;
-}
-    .footerBorders {
+  }
+  .footerBorders {
     margin-top: 60px;
-}
-    .footerBottomElements h2 {
+  }
+  .footerBottomElements h2 {
     font-size: 14px;
     font-weight: 400;
     margin: 0px;
     padding: 0px;
-}
-    .footerProdukter h1, h2 {
+  }
+  .footerProdukter h1,
+  h2 {
     padding-top: 8px;
     padding-bottom: 8px;
-}
-    .footerOmOss h1, h2 {
+  }
+  .footerOmOss h1,
+  h2 {
     padding-top: 8px;
     padding-bottom: 8px;
-}
-    .footerSupport {
+  }
+  .footerSupport {
     margin-top: 0px;
-}
-    .footerSupport h1, h2 {
+  }
+  .footerSupport h1,
+  h2 {
     padding-top: 8px;
     padding-bottom: 8px;
-}
-    .footerOmOss {
+  }
+  .footerOmOss {
     margin-top: 0px;
-}
-    .footerTextWall {
-        flex-direction: row;
-}
-    .footerBottomElements {
-        flex-direction: row;
-}
+  }
+  .footerTextWall {
+    flex-direction: row;
+  }
+  .footerBottomElements {
+    flex-direction: row;
+  }
 }
