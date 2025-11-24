@@ -657,7 +657,6 @@ section.location {
 .footerSocialsMobile {
   display: block;
   order: -1;
-  height: 13.71px;
   width: 54.85px;
   padding-bottom: 10px;
   margin-top: -15px;
@@ -665,6 +664,12 @@ section.location {
 .footerProdukter {
   display: none;
 }
+
+.footerLogoDesktop {display: none;}
+.footerLogoMobile {display: block; width: 103.9px; height: 16.46px;}
+.footerSocialsDesktop {display: none;}
+.footerSocialsMobile {display: block; order: -1; width: 54.85px; padding-bottom: 10px; margin-top: -15px;}
+.footerProdukter {display: none;}
 
 footer {
   margin-left: 20px;
@@ -676,7 +681,6 @@ footer {
 .footerBorders {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-  font-family: "IBM Plex Serif";
   margin-top: 30px;
 }
 .footerBorders h1 {
