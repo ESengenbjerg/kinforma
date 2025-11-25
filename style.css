@@ -768,6 +768,9 @@ section.location {
     aspect-ratio: 1;
     margin-left: 10%;
   }
+  .textLocation h3 {
+    font-size: 84px;
+  }
 }
 
 /* Hover-effekt på dots runt jackan */
@@ -907,6 +910,18 @@ footer {
 .footerBottomElements img {
   padding-left: 20px;
 }
+
+.textLocation h3 {
+  font-size: 32px;
+}
+
+.mapMobile {
+  display: block;
+}
+.mapDesktop {
+  display: none;
+}
+
 @media (min-width: 900px) {
   .footerLogoDesktop {
     display: block;
@@ -996,5 +1011,12 @@ footer {
   }
   input {
   padding-left: 20px;
+  }
+
+  .mapMobile {
+  display: none;
+  }
+  .mapDesktop {
+    display: block;
   }
 }
