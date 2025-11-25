@@ -545,6 +545,7 @@ section.location {
   /* ----- INTE KLAR ----- */
   .sectionJacka {
     margin-bottom: 25%;
+    overflow: visible;
   }
 
   .greyJacket {
