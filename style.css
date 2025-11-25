@@ -140,17 +140,16 @@ h2.nyheter {
   min-width: 80vw;
   background: white;
   border-radius: 16px;
-  padding: 24px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
-  border: 1px solid black;
+  overflow: hidden;
   scroll-snap-align: center;
 }
 
 .card img {
-  width: 70vw;
+  width: 80vw;
   aspect-ratio: 1;
   object-fit: cover;
-  border-radius: 16px;
+  /* border-radius: 16px; */
 }
 
 /* SECTION: Jackan */
