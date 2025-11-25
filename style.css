@@ -160,6 +160,7 @@ h2.nyheter {
   height: 60vh;
   position: relative;
   margin-bottom: 20%;
+  overflow: hidden;
 }
 
 .greyJacket {
@@ -168,7 +169,7 @@ h2.nyheter {
   left: 0%;
   width: 200%;
   object-fit: cover;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .jacketDot {
@@ -205,6 +206,8 @@ h2.nyheter {
   background-color: var(--secondcolorgreen);
   color: var(--background-color);
   border-radius: 4px;
+  border: none;
+  box-shadow: 0 5px 19px grey;
 }
 
 /* SECTION: Produktvisning */
