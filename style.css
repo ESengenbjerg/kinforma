@@ -430,7 +430,7 @@ section.kintagAnimation {
 }
 
 .newsletter h3 {
-  font-size: 2rem;
+  font-size: 18px;
   text-align: center;
   font-weight: 700;
   color: white;
@@ -443,6 +443,28 @@ section.kintagAnimation {
   font-weight: 400;
 }
 
+.newsletter .newsletterTopText {
+  font-size: 12px;
+}
+.newsletter .newsletterBottomText {
+  font-size: 11px;
+}
+
+.newsletter button {
+  width: 96px;
+  height: 28px;
+  box-shadow: none;
+  border-radius: 0;
+  border: none;
+  background-color: white;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+
+
 .signUp {
   width: 100%;
   display: flex;
@@ -451,9 +473,19 @@ section.kintagAnimation {
 }
 
 #signUpBox {
-  background-color: grey;
+  background-color: transparent;
   border: 1px solid white;
   color: white;
+  width: 202px;
+  height: 28px;
+}
+
+::placeholder {
+  color: white;
+  opacity: 0.5;
+}
+input {
+  padding-left: 5px;
 }
 
 /* SECTION: Location */
@@ -938,5 +970,29 @@ footer {
   }
   .footerBottomElements {
     flex-direction: row;
+  }
+
+  .newsletter h3 {
+  font-size: 3rem;
+  }
+
+  .newsletter .newsletterTopText {
+  font-size: 18px;
+  }
+  .newsletter .newsletterBottomText {
+  font-size: 12px;
+  }
+
+  .newsletter button {
+  width: 145px;
+  height: 48px;
+  }
+
+  #signUpBox {
+  width: 352px;
+  height: 48px;
+  }
+  input {
+  padding-left: 20px;
   }
 }
