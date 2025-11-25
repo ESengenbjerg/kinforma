@@ -577,14 +577,16 @@ section.location {
   .headerButtons {
     display: flex;
     gap: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
-  .headerButtons button {
+  .hero-knapp {
     color: var(--background-color);
     background-color: var(--secondcolorgreen);
     width: 15vw;
-    padding-top: 4%;
-    padding-bottom: 4%;
+    height: 5vh;
     border: none;
   }
 
