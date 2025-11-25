@@ -351,6 +351,8 @@ section.produktvisning {
   padding-top: 5%;
   padding-left: 10%;
   margin-bottom: 10%;
+  background-color: var(--secondcolorgreen);
+  color: var(--background-color);
 }
 
 .argument div {
@@ -370,12 +372,13 @@ section.produktvisning {
 }
 
 .readMore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 2px solid black;
   width: 30vw;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  height: auto;
-  background-color: white;
+  height: 5vh;
+  background-color: var(--background-color);
 }
 
 /* ABOUT US */
@@ -665,7 +668,9 @@ section.location {
   }
 
   .readMore {
-    display: none;
+    width: 15vw;
+    height: 7vh;
+    border: none;
   }
 
   /* Section: Location */
