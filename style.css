@@ -391,15 +391,27 @@ section.kintagAnimation {
 
 .recycle {
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 10%;
+  position: relative;
+}
+
+.recycleBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  object-fit: cover;
+  z-index: 1;
 }
 
 .recycleHeader {
   text-align: center;
   margin-bottom: 10%;
+  z-index: 3;
 }
 
 .argument {
@@ -415,6 +427,7 @@ section.kintagAnimation {
   margin-bottom: 10%;
   background-color: var(--secondcolorgreen);
   color: var(--background-color);
+  z-index: 3;
 }
 
 .argument div {
@@ -441,6 +454,7 @@ section.kintagAnimation {
   width: 30vw;
   height: 5vh;
   background-color: var(--background-color);
+  z-index: 2;
 }
 
 /* ABOUT US */
@@ -771,9 +785,8 @@ section.location {
 
   .recycleHeader {
     color: var(--background-color);
-    /* ---------- TA BORT RÖDA TEXTFÄRGEN!!!!! ---------- */
-    color: red;
     font-size: 4rem;
+    margin-top: 10%;
   }
 
   .argumentDesktop {
@@ -789,6 +802,7 @@ section.location {
     padding-bottom: 2%;
     padding-left: 0;
     align-items: center;
+    margin-bottom: 2%;
   }
 
   .readMore {
