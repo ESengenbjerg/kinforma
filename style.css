@@ -333,10 +333,11 @@ section.produktvisning {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 10%;
 }
 
-.recycleP {
-  margin-left: 5%;
+.recycleHeader {
+  text-align: center;
   margin-bottom: 10%;
 }
 
@@ -652,6 +653,14 @@ section.location {
   }
 
   /* Section: Hållbarhet */
+
+  .recycleHeader {
+    color: var(--background-color);
+    /* ---------- TA BORT RÖDA TEXTFÄRGEN!!!!! ---------- */
+    color: red;
+    font-size: 4rem;
+  }
+
   .argumentDesktop {
     display: flex;
     flex-direction: row;
