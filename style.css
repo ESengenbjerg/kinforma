@@ -786,6 +786,7 @@ footer {
 }
 
 .footerBottomElements {
+  color: white;
   background: url("/pictures/Frame 91.png");
   background-size: cover;
   display: flex;
