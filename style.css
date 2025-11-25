@@ -154,11 +154,23 @@ h2.nyheter {
 }
 
 /* SECTION: Jackan */
+.textJackaMobile {
+  width: 100vw;
+  text-align: center;
+}
+
+.jackaHeaderMobile {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
 .sectionJacka {
   background-color: var(--background-color);
   width: 100vw;
   height: 60vh;
   position: relative;
+  margin-top: 10%;
+  /* margin-top: 40%; */
   margin-bottom: 20%;
   overflow: hidden;
 }
@@ -169,7 +181,6 @@ h2.nyheter {
   left: 0%;
   width: 200%;
   object-fit: cover;
-  /* overflow: hidden; */
 }
 
 .jacketDot {
@@ -548,6 +559,7 @@ section.location {
   .sectionJacka {
     margin-bottom: 25%;
     overflow: visible;
+    margin-top: 0%;
   }
 
   .greyJacket {
@@ -578,22 +590,27 @@ section.location {
     transform: translate(-50%, -50%);
   }
 
-  .textJacka {
-    position: absolute;
-    top: 20%;
-    right: 5%;
-    width: 25vw;
-    text-align: center;
-    text-align: end;
-  }
-
   .sectionJacka button {
     width: 15vw;
     bottom: -40%;
     right: 10%;
   }
 
-  .jackaHeader {
+  .textJackaMobile {
+    display: none;
+  }
+
+  .textJackaDesktop {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    width: 25vw;
+    text-align: center;
+    text-align: end;
+    z-index: 5;
+  }
+
+  .jackaHeaderDesktop {
     font-size: 3rem;
     margin-bottom: 0;
   }
