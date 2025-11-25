@@ -236,6 +236,10 @@ h2.nyheter {
 }
 
 /* SECTION: Produktvisning */
+.sectionTextProduktvisning {
+  display: none;
+}
+
 section.produktvisning {
   width: 100vw;
   display: flex;
@@ -463,8 +467,6 @@ section.kintagAnimation {
   -moz-appearance: none;
 }
 
-
-
 .signUp {
   width: 100%;
   display: flex;
@@ -684,6 +686,26 @@ section.location {
   }
 
   /* Section: Produktvisning */
+
+  .sectionTextProduktvisning {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+  }
+
+  .divTextProduktvisning {
+    width: 90%;
+    background-color: var(--secondcolorgreen);
+    text-align: center;
+    color: var(--background-color);
+  }
+
+  .divTextProduktvisning h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
   section.produktvisning {
     width: 100vw;
     flex-direction: row;
@@ -990,27 +1012,27 @@ footer {
   }
 
   .newsletter h3 {
-  font-size: 3rem;
+    font-size: 3rem;
   }
 
   .newsletter .newsletterTopText {
-  font-size: 18px;
+    font-size: 18px;
   }
   .newsletter .newsletterBottomText {
-  font-size: 12px;
+    font-size: 12px;
   }
 
   .newsletter button {
-  width: 145px;
-  height: 48px;
+    width: 145px;
+    height: 48px;
   }
 
   #signUpBox {
-  width: 352px;
-  height: 48px;
+    width: 352px;
+    height: 48px;
   }
   input {
-  padding-left: 20px;
+    padding-left: 20px;
   }
 
   .mapMobile {
