@@ -376,6 +376,8 @@ section.produktvisning {
 
 /* SECTION: Newsletter */
 .newsletter {
+  background: url("/pictures/Frame 92.png");
+  background-size: cover;
   width: 100vw;
   height: auto;
   background-color: grey;
