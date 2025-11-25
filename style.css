@@ -711,8 +711,15 @@ section.location {
 footer {
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 40px;
   margin-bottom: 5px;
+}
+
+.footerTopBorder {
+  border-top: 1px solid black;
+  width: 100vw;
+  padding-top: 70px;
+  margin-left: -80px;
+  display: none;
 }
 
 .footerBorders {
@@ -767,7 +774,8 @@ footer {
 }
 
 .footerBottomElements {
-  background-color: green;
+  background: url("/pictures/Frame 91.png");
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -803,10 +811,12 @@ footer {
   .footerProdukter {
     display: block;
   }
+  .footerTopBorder {
+    display: block;
+  }
   footer {
     margin-left: 80px;
     margin-right: 80px;
-    margin-top: 70px;
   }
   .footerBorders {
     margin-top: 60px;
