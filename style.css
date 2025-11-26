@@ -6,6 +6,7 @@
   --color-lavender: #d4c3dd;
   --color-armygreen: #5d613c;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -14,6 +15,7 @@ body {
   background-color: #fbfbf5;
   font-family: "IBM Plex Sans", sans-serif;
 }
+
 main {
   position: relative;
 }
@@ -65,6 +67,7 @@ nav {
   height: 20px;
   width: 20px;
 }
+
 .navFlex .arrow {
   height: 8px;
   width: 12px;
@@ -74,6 +77,7 @@ nav {
   display: flex;
   flex-direction: row;
 }
+
 .langSelect img {
   margin-top: 22px;
   margin-left: 8px;
@@ -123,6 +127,7 @@ header h2 {
 .headerButtons {
   display: none;
 }
+
 /* ----- CHAT BOT ------ */
 .chat-icon {
   position: fixed;
@@ -136,7 +141,6 @@ header h2 {
 }
 
 /* KARUSELL */
-
 h2.nyheter {
   text-align: center;
   font-size: 3rem;
@@ -150,7 +154,6 @@ h2.nyheter {
   overflow-x: auto;
   padding: 24px;
   margin-top: 10%;
-
   scroll-snap-type: x mandatory;
 }
 
@@ -197,7 +200,6 @@ h2.nyheter {
   height: 60vh;
   position: relative;
   margin-top: 10%;
-  /* margin-top: 40%; */
   margin-bottom: 20%;
   overflow: hidden;
 }
@@ -263,7 +265,6 @@ section.produktvisning {
 .productCard {
   width: 90vw;
   height: auto;
-  /* height: 80vh; */
   position: relative;
 }
 
@@ -319,8 +320,7 @@ section.produktvisning {
   object-fit: cover;
 }
 
-/* TILLFÄLLIGA FÄRGER I COLORCONFIG */
-
+/* Color configurator */
 .coatConfigRed,
 .charmConfigRed,
 .bitsConfigRed,
@@ -380,15 +380,7 @@ section.kintagAnimation {
   max-width: 100vw;
 }
 
-/* --- Desktop --- */
-@media (min-width: 768px) {
-  .kintagAnimation img {
-    max-width: 100vw;
-  }
-}
-
 /* Section: Hållbarhet */
-
 .recycle {
   width: 100%;
   height: 100%;
@@ -417,7 +409,6 @@ section.kintagAnimation {
 .argument {
   width: 90vw;
   border-radius: 16px;
-  /*      x-axel y-axel, blur, färg */
   box-shadow: 0 5px 19px grey;
   display: flex;
   flex-direction: column;
@@ -457,13 +448,6 @@ section.kintagAnimation {
   z-index: 2;
 }
 
-/* ABOUT US */
-.aboutUs {
-  width: 100vw;
-  height: auto;
-  padding: 10%;
-}
-
 /* SECTION: Newsletter */
 .newsletter {
   background: url("/pictures/Frame 92.png");
@@ -491,6 +475,7 @@ section.kintagAnimation {
 .newsletter .newsletterTopText {
   font-size: 12px;
 }
+
 .newsletter .newsletterBottomText {
   font-size: 11px;
 }
@@ -527,12 +512,12 @@ section.kintagAnimation {
   color: white;
   opacity: 0.5;
 }
+
 input {
   padding-left: 5px;
 }
 
 /* SECTION: Location */
-
 section.location {
   margin: 10%;
 }
@@ -550,312 +535,20 @@ section.location {
 }
 
 /* FOOTER */
-
-/* ----- MEDIA QUERY ----- */
-
-@media (min-width: 900px) {
-  /* NAVBAR */
-  .mobileNavbar {
-    display: none;
-  }
-
-  .desktopNavbar {
-    background-color: white;
-    height: 15vh;
-    width: 100vw;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-right: 5%;
-    gap: 110px;
-  }
-
-  /* .navGap {
-    width: 50%;
-    } */
-
-  .desktopNavbarLogo {
-    height: 40%;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-  }
-
-  .desktopNavbarLogo img {
-    width: 90%;
-    height: auto;
-    width: auto;
-    padding-left: 51.797px;
-  }
-
-  .desktopNavFlex {
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 18px;
-  }
-
-  .menuDrop {
-    display: flex;
-    gap: 5px;
-    align-items: center;
-  }
-
-  .menuDrop img {
-    height: 7px;
-    width: 12px;
-  }
-
-  /* CHAT-BOT */
-
-  .chat-icon:hover {
-    transform: scale(1.1);
-  }
-
-  /* HEADER */
-  /* .headerP {
-    display: block;
-    text-align: center;
-    margin-bottom: 5%;
-  } */
-
-  .headerButtons {
-    display: flex;
-    gap: 40px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .hero-knapp {
-    color: var(--background-color);
-    background-color: var(--secondcolorgreen);
-    width: 15vw;
-    height: 5vh;
-    border: none;
-  }
-
-  /* Karusell i produktvisning, karusell ska brytas. */
-  .cards-wrapper {
-    /* To break karusell */
-    overflow-x: hidden;
-    scroll-snap-type: none;
-
-    /* Actucal desktop layout */
-    width: 90vw;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    justify-content: space-evenly;
-    gap: 0;
-    padding: 0;
-  }
-
-  .card {
-    /* To break karusell */
-    scroll-snap-align: none;
-    min-width: 20vw;
-
-    /* Actual desktop layout */
-    width: 20vw;
-    height: auto;
-  }
-
-  .card img {
-    width: 100%;
-  }
-  .karusell {
-    margin-bottom: 10%;
-  }
-
-  /* ----- Section: Jackan ----- */
-  /* ----- INTE KLAR ----- */
-  .sectionJacka {
-    margin-bottom: 25%;
-    overflow: visible;
-    margin-top: 0%;
-  }
-
-  .greyJacket {
-    overflow: hidden;
-    width: 100vw;
-    height: auto;
-  }
-
-  .jacketDot {
-    width: 10vw;
-  }
-
-  .item1 {
-    top: 25%;
-    left: 55%;
-    transform: translate(-50%, -50%);
-  }
-
-  .item2 {
-    top: 75%;
-    left: 63%;
-    transform: translate(-50%, -50%);
-  }
-
-  .item3 {
-    top: 125%;
-    left: 55%;
-    transform: translate(-50%, -50%);
-  }
-
-  .sectionJacka button {
-    width: 15vw;
-    bottom: -40%;
-    right: 10%;
-  }
-
-  .textJackaMobile {
-    display: none;
-  }
-
-  .textJackaDesktop {
-    position: absolute;
-    top: 20%;
-    right: 5%;
-    width: 25vw;
-    text-align: center;
-    text-align: end;
-    z-index: 5;
-  }
-
-  .jackaHeaderDesktop {
-    font-size: 3rem;
-    margin-bottom: 0;
-  }
-
-  /* Section: Produktvisning */
-
-  .sectionTextProduktvisning {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5%;
-  }
-
-  .divTextProduktvisning {
-    width: 90%;
-    background-color: var(--secondcolorgreen);
-    text-align: center;
-    color: var(--background-color);
-  }
-
-  .divTextProduktvisning h2 {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  section.produktvisning {
-    width: 100vw;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px 20px;
-  }
-
-  .productCard {
-    width: 30%;
-    height: 20%;
-  }
-
-  .productCard img {
-    margin-bottom: 0;
-    width: 100%;
-    aspect-ratio: 1;
-  }
-  .greyBox {
-    display: inline-block;
-    background-color: grey;
-    width: 30vw;
-    height: 85vh;
-  }
-
-  .nextGreyBox {
-    width: 100vw;
-    height: 60vh;
-    background-color: lightblue;
-  }
-
-  /* Section: Hållbarhet */
-
-  .recycleHeader {
-    color: var(--background-color);
-    font-size: 4rem;
-    margin-top: 10%;
-  }
-
-  .argumentDesktop {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 40px;
-  }
-
-  .argument {
-    width: 25vw;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    padding-left: 0;
-    align-items: center;
-    margin-bottom: 5%;
-  }
-
-  .readMore {
-    width: 15vw;
-    height: 7vh;
-    border: none;
-  }
-
-  /* Section: Location */
-  section.location {
-    margin: 0;
-  }
-
-  .location {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-
-  .imgLocation {
-    width: 50vw;
-    aspect-ratio: 1;
-  }
-
-  .textLocation {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50vw;
-    aspect-ratio: 1;
-    margin-left: 10%;
-  }
-  .textLocation h3 {
-    font-size: 84px;
-  }
-}
-
-/* Hover-effekt på dots runt jackan */
-/* .jacketDot:hover {
-  transform: scale(1.2);
-  transition: transform 0.4 ease;
-} */
-
 .footerLogoDesktop {
   display: none;
 }
+
 .footerLogoMobile {
   display: block;
   width: 103.9px;
   height: 16.46px;
 }
+
 .footerSocialsDesktop {
   display: none;
 }
+
 .footerSocialsMobile {
   display: block;
   order: -1;
@@ -863,6 +556,7 @@ section.location {
   padding-bottom: 10px;
   margin-top: -15px;
 }
+
 .footerProdukter {
   display: none;
 }
@@ -870,14 +564,17 @@ section.location {
 .footerLogoDesktop {
   display: none;
 }
+
 .footerLogoMobile {
   display: block;
   width: 103.9px;
   height: 16.46px;
 }
+
 .footerSocialsDesktop {
   display: none;
 }
+
 .footerSocialsMobile {
   display: block;
   order: -1;
@@ -885,6 +582,7 @@ section.location {
   padding-bottom: 10px;
   margin-top: -15px;
 }
+
 .footerProdukter {
   display: none;
 }
@@ -907,10 +605,12 @@ footer {
   border-top: 1px solid black;
   margin-top: 30px;
 }
+
 .footerBold {
   font-size: 16px;
   font-weight: 600;
 }
+
 .footerThin {
   font-size: 14px;
   font-weight: 400;
@@ -927,27 +627,33 @@ footer {
 .footerProdukter {
   width: 149.67px;
 }
+
 .footerOmOss {
   width: 149.67px;
   margin-top: -40px;
 }
+
 .footerOmOss p {
   padding-top: 0px;
   padding-bottom: 0px;
 }
+
 .footerOmOss .footerThin {
   margin-top: 6px;
   margin-bottom: 6px;
 }
+
 .footerSupport {
   width: 149.67px;
   margin-top: -30px;
   margin-bottom: -60px;
 }
+
 .footerSupport p {
   padding-top: 0px;
   padding-bottom: 0px;
 }
+
 .footerSupport .footerThin {
   margin-top: 6px;
   margin-bottom: 6px;
@@ -965,6 +671,7 @@ footer {
   margin-left: -20px;
   margin-right: -20px;
 }
+
 .footerBottomElements .footerThin {
   font-size: 8px;
   font-weight: 400;
@@ -972,6 +679,7 @@ footer {
   padding: 0px;
   padding-left: 20px;
 }
+
 .footerBottomElements img {
   padding-left: 20px;
 }
@@ -983,105 +691,7 @@ footer {
 .mapMobile {
   display: block;
 }
+
 .mapDesktop {
   display: none;
-}
-
-@media (min-width: 900px) {
-  .footerLogoDesktop {
-    display: block;
-  }
-  .footerLogoMobile {
-    display: none;
-  }
-  .footerSocialsDesktop {
-    display: block;
-  }
-  .footerSocialsMobile {
-    display: none;
-  }
-  .footerProdukter {
-    display: block;
-  }
-  .footerTopBorder {
-    display: block;
-  }
-  footer {
-    margin-left: 80px;
-    margin-right: 80px;
-  }
-  .footerBorders {
-    margin-top: 60px;
-  }
-  .footerBottomElements {
-    padding-bottom: 40px;
-    margin-left: -80px;
-    margin-right: -80px;
-  }
-  .footerBottomElements .footerThin {
-    font-size: 14px;
-    font-weight: 400;
-    margin: 0px;
-    padding: 0px;
-    padding-left: 80px;
-  }
-  .footerBottomElements img {
-    padding-right: 80px;
-  }
-  .footerProdukter h1,
-  h2 {
-    padding-top: 8px;
-    padding-bottom: 8px;
-  }
-  .footerOmOss p {
-    padding-top: 8px;
-    padding-bottom: 8px;
-  }
-  .footerSupport {
-    margin-top: 0px;
-  }
-  .footerSupport p {
-    padding-top: 8px;
-    padding-bottom: 8px;
-  }
-  .footerOmOss {
-    margin-top: 0px;
-  }
-  .footerTextWall {
-    flex-direction: row;
-  }
-  .footerBottomElements {
-    flex-direction: row;
-  }
-
-  .newsletter h3 {
-    font-size: 3rem;
-  }
-
-  .newsletter .newsletterTopText {
-    font-size: 18px;
-  }
-  .newsletter .newsletterBottomText {
-    font-size: 12px;
-  }
-
-  .newsletter button {
-    width: 145px;
-    height: 48px;
-  }
-
-  #signUpBox {
-    width: 352px;
-    height: 48px;
-  }
-  input {
-    padding-left: 20px;
-  }
-
-  .mapMobile {
-    display: none;
-  }
-  .mapDesktop {
-    display: block;
-  }
 }
