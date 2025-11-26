@@ -330,6 +330,10 @@ section.produktvisning {
   gap: 10px;
 }
 
+.productCard button {
+  margin-top: 10%;
+}
+
 .bildspel {
   width: 30vw;
   aspect-ratio: 3/4;
