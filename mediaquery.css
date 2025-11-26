@@ -223,6 +223,38 @@
     background-color: lightblue;
   }
 
+  /* Sektion .kintagAnimation */
+
+  .kintagHero {
+    padding: 0 8vw;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .kintagBg {
+    object-fit: cover;
+    object-position: left center;
+  }
+
+  .kintagContent {
+    text-align: left;
+    max-width: 450px;
+  }
+
+  .kintagContent h2 {
+    font-size: 7rem;
+    font-weight: 800;
+    margin: 0 0 1rem;
+  }
+  .kintagContent p {
+    margin: 0;
+    line-height: 1.6;
+    font-size: 1.5rem;
+  }
+  .appButtons {
+    justify-content: flex-start;
+  }
+
   /* Section: Hållbarhet */
   .recycleHeader {
     color: var(--background-color);
