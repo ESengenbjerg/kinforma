@@ -113,7 +113,7 @@
     overflow: visible;
     margin-top: 0%;
     background-image: url("produkter/produktbild_jacka_snurr.gif");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: top left;
   }
