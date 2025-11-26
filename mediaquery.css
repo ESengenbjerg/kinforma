@@ -219,9 +219,6 @@
     height: 60vh;
     background-color: lightblue;
   }
-  #slideshow {
-    transition: opacity 0.5s ease;
-  }
 
   /* Section: Hållbarhet */
   .recycleHeader {
