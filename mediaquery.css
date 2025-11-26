@@ -327,7 +327,7 @@
   .textLocation {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     width: 50vw;
     aspect-ratio: 1;
     margin-left: 10%;
