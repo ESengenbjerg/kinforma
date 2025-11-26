@@ -103,16 +103,19 @@
   }
 
   /* Section: Jackan */
-  .sectionJacka {
-    margin-bottom: 25%;
-    overflow: visible;
-    margin-top: 0%;
+  .greyJacket {
+    display: none;
   }
 
-  .greyJacket {
-    overflow: hidden;
-    width: 100vw;
-    height: auto;
+  .sectionJacka {
+    margin-bottom: 0%;
+    height: 57.5vh;
+    overflow: visible;
+    margin-top: 0%;
+    background-image: url("produkter/produktbild_jacka_snurr.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top left;
   }
 
   .jacketDot {
@@ -120,26 +123,26 @@
   }
 
   .item1 {
-    top: 25%;
-    left: 55%;
+    top: 20%;
+    left: 52.5%;
     transform: translate(-50%, -50%);
   }
 
   .item2 {
-    top: 75%;
-    left: 63%;
+    top: 50%;
+    left: 60%;
     transform: translate(-50%, -50%);
   }
 
   .item3 {
-    top: 125%;
-    left: 55%;
+    top: 80%;
+    left: 52.5%;
     transform: translate(-50%, -50%);
   }
 
   .sectionJacka button {
     width: 15vw;
-    bottom: -40%;
+    bottom: 10%;
     right: 10%;
   }
 
@@ -167,6 +170,7 @@
     width: 100vw;
     display: flex;
     justify-content: center;
+    margin-top: 5%;
     margin-bottom: 5%;
   }
 
