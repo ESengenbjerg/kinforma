@@ -221,6 +221,10 @@
     margin-top: 10%;
   }
 
+  .recycleBackground {
+    display: block;
+  }
+
   .argumentDesktop {
     display: flex;
     flex-direction: row;
