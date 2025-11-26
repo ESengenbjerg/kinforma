@@ -391,15 +391,17 @@ section.produktvisning {
   background-color: transparent !important;
 }
 
+/* Slideshow */
 .bildspel {
-  width: 30vw;
+  width: 100vw;
   aspect-ratio: 3/4;
   margin-bottom: 2.6%;
+  margin-left: 10%;
 }
 
 .bildspelImage {
-  width: 100%;
-  height: auto;
+  width: 89%;
+  height: 65vh;
   object-fit: cover;
 }
 
