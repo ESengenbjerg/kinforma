@@ -619,6 +619,9 @@ section.location {
   display: flex;
   justify-content: center;
   object-fit: cover;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10%;
 }
 
 /* FOOTER */
