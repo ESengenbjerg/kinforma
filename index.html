@@ -21,7 +21,6 @@
           <div class="logo">
             <img src="pictures/Frame 42.svg" alt="pear logo" />
           </div>
-          <!-- <div class="navGap"></div> -->
           <div class="navFlex">
             <img
               src="pictures/material-symbols_menu-rounded.png"
@@ -93,10 +92,6 @@
         />
         <div class="headerText">
           <h2>Designad för att växa</h2>
-          <!-- <p class="headerP">
-            Designad för barn som växer och leker. Vår intelligenta jacka
-            anpassar sig och minskar onödig konsumption
-          </p> -->
         </div>
       </header>
 
@@ -151,14 +146,6 @@
         </div>
 
       </section>
-
-      <!-- <section class="textBox">
-        <h2>Framtidens barnjacka</h2>
-        <p>
-          En intelligent jacka som växer med ditt barn och minskar onödig
-          konsumption genom smart design
-        </p>
-      </section> -->
 
       <div class="textJackaMobile">
         <h2 class="jackaHeaderMobile">FRAMTIDENS BARNJACKA</h2>
@@ -466,22 +453,6 @@
         </div>
       </footer>
     </main>
-    <script>
-      const cards = document.querySelectorAll(".productCard");
-
-      cards.forEach((card) => {
-        const mainImage = card.querySelector(".productCardBorder img");
-        const colorBoxes = card.querySelectorAll(".colorBox");
-
-        colorBoxes.forEach((box) => {
-          box.addEventListener("click", () => {
-            const newSrc = box.getAttribute("data-image");
-            if (newSrc) {
-              mainImage.src = newSrc;
-            }
-          });
-        });
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
