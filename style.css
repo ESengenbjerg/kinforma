@@ -263,6 +263,19 @@ h2.nyheter {
   display: none;
 }
 
+.textAboveProducts {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-left: 5%;
+  margin-right: 2.5%;
+}
+
+.textAboveProducts p,
+.textAboveProducts a {
+  font-size: 0.5rem;
+}
+
 section.produktvisning {
   width: 100vw;
   display: flex;
