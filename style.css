@@ -301,6 +301,7 @@ section.produktvisning {
 
 .configBox {
   border: 1px solid black;
+  border-top: none;
   height: 20vh;
   display: flex;
   justify-content: space-evenly;
