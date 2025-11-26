@@ -138,6 +138,12 @@ header h2 {
   cursor: pointer;
   z-index: 1000;
   transition: transform 0.2s ease;
+  background-color: var(--background-color);
+  border-radius: 50%;
+  background-image: url("pictures/chat-bot.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
 }
 
 /* KARUSELL */
