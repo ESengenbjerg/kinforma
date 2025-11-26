@@ -68,6 +68,10 @@
     justify-content: center;
   }
 
+  .headerText h2 {
+    font-size: 6rem;
+  }
+
   .hero-knapp {
     color: var(--background-color);
     background-color: var(--secondcolorgreen);
