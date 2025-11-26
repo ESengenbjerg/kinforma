@@ -185,8 +185,17 @@
   }
 
   .divTextProduktvisning h2 {
-    margin-top: 0;
+    margin-top: 2%;
     margin-bottom: 0;
+    font-size: 3rem;
+  }
+
+  .textAboveProducts {
+    margin-left: 4%;
+  }
+
+  .textAboveProducts p {
+    font-size: 1rem;
   }
 
   section.produktvisning {
