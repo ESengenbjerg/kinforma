@@ -290,7 +290,7 @@ section.produktvisning {
 
 .produktText {
   position: absolute;
-  top: 45%;
+  top: 55%;
   left: 5%;
 }
 
@@ -365,10 +365,23 @@ section.produktvisning {
   width: 100%;
   height: 47px;
   border-radius: 4px;
-  color: white;
+  color: var(--background-color);
   margin-bottom: 10%;
 }
 
+.patchProduct .patchImage1 {
+  background-image: url("produkter/produktibld_patch_2.png");
+  background-size: cover;
+  background-position: center;
+  background-color: transparent !important;
+}
+
+.patchProduct .patchImage2 {
+  background-image: url("produkter/produktibld_patch_1.png");
+  background-size: cover;
+  background-position: center;
+  background-color: transparent !important;
+}
 .greyBox {
   display: none;
 }
@@ -385,7 +398,9 @@ section.kintagAnimation {
 .kintagAnimation img {
   max-width: 100vw;
 }
-
+#slideshow {
+  transition: opacity 0.5s ease;
+}
 /* Section: Hållbarhet */
 .recycle {
   width: 100%;
@@ -399,12 +414,6 @@ section.kintagAnimation {
 
 .recycleBackground {
   display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  object-fit: cover;
-  z-index: 1;
 }
 
 .recycleHeader {

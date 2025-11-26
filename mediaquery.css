@@ -194,6 +194,13 @@
     width: 30%;
     height: 20%;
   }
+  .produktText h3,
+  p {
+    font-size: 1.5rem;
+  }
+  .produktText {
+    top: 48%;
+  }
 
   .productCard img {
     margin-bottom: 0;
@@ -212,6 +219,9 @@
     height: 60vh;
     background-color: lightblue;
   }
+  #slideshow {
+    transition: opacity 0.5s ease;
+  }
 
   /* Section: Hållbarhet */
   .recycleHeader {
@@ -222,6 +232,12 @@
 
   .recycleBackground {
     display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    object-fit: cover;
+    z-index: 1;
   }
 
   .argumentDesktop {
