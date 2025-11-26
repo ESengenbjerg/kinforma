@@ -191,8 +191,10 @@ h2.nyheter {
 
 /* SECTION: Jackan */
 .textJackaMobile {
-  width: 100vw;
+  width: 80vw;
   text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .jackaHeaderMobile {
