@@ -1,0 +1,473 @@
+@media (min-width: 768px) {
+  .kintagAnimation img {
+    max-width: 100vw;
+  }
+}
+
+@media (min-width: 900px) {
+  /* NAVBAR */
+  .mobileNavbar {
+    display: none;
+  }
+
+  .desktopNavbar {
+    background-color: white;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 5%;
+  }
+
+  .desktopNavbarLogo {
+    height: 40%;
+    width: 70%;
+    display: flex;
+    align-content: center;
+    justify-content: start;
+  }
+
+  .desktopNavbarLogo img {
+    width: 90%;
+    height: auto;
+    width: auto;
+    padding-left: 51.797px;
+  }
+
+  .desktopNavFlex {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .menuDrop {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .menuDrop img {
+    height: 7px;
+    width: 12px;
+  }
+
+  /* CHAT-BOT */
+  .chat-icon:hover {
+    transform: scale(1.1);
+  }
+
+  /* HEADER */
+  .headerButtons {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .headerText h2 {
+    font-size: 6rem;
+  }
+
+  .hero-knapp {
+    color: var(--background-color);
+    background-color: var(--secondcolorgreen);
+    width: 15vw;
+    height: 5vh;
+    border: none;
+  }
+
+  .cards-wrapper {
+    overflow-x: hidden;
+    scroll-snap-type: none;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    justify-content: space-evenly;
+    gap: 0;
+    padding: 0;
+  }
+
+  .card {
+    scroll-snap-align: none;
+    min-width: 20vw;
+    width: 20vw;
+    height: auto;
+  }
+
+  .card img {
+    width: 100%;
+  }
+  .karusell {
+    margin-bottom: 10%;
+  }
+
+  /* Section: Jackan */
+  .greyJacket {
+    display: none;
+  }
+
+  .sectionJacka {
+    margin-bottom: 0%;
+    height: 70vh;
+    overflow: visible;
+    margin-top: 0%;
+    background-image: url("produkter/produktbild_jacka_snurr.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+
+  .jacketDot {
+    width: 10vw;
+  }
+
+  .item1 {
+    top: 20%;
+    left: 52.5%;
+    transform: translate(-50%, -50%);
+  }
+
+  .item2 {
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
+
+  .item3 {
+    top: 80%;
+    left: 52.5%;
+    transform: translate(-50%, -50%);
+  }
+
+  .sectionJacka button {
+    width: 15vw;
+    bottom: 10%;
+    right: 10%;
+  }
+
+  .textJackaMobile {
+    display: none;
+  }
+
+  .textJackaDesktop {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    width: 25vw;
+    text-align: center;
+    text-align: end;
+    z-index: 5;
+  }
+
+  .jackaHeaderDesktop {
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
+
+  /* Section: Produktvisning */
+  .sectionTextProduktvisning {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .divTextProduktvisning {
+    width: 90%;
+    background-color: var(--secondcolorgreen);
+    text-align: center;
+    color: var(--background-color);
+  }
+
+  .divTextProduktvisning h2 {
+    margin-top: 2%;
+    margin-bottom: 0;
+    font-size: 3rem;
+  }
+
+  .textAboveProducts {
+    margin-left: 4%;
+  }
+
+  .textAboveProducts p,
+  .textAboveProducts a {
+    font-size: 1rem;
+  }
+
+  section.produktvisning {
+    width: 100vw;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px 20px;
+  }
+
+  .productCard {
+    width: 30%;
+    height: 20%;
+  }
+  .produktText h3,
+  p {
+    font-size: 1.5rem;
+  }
+
+  .produktText {
+    top: 43%;
+  }
+
+  .productCard img {
+    margin-bottom: 0;
+    width: 100%;
+    aspect-ratio: 1;
+  }
+
+  .bildspel {
+    width: 30vw;
+    aspect-ratio: 3/4;
+    margin-bottom: 2.6%;
+    margin-left: 0%;
+  }
+
+  .bildspelImage {
+    width: 100%;
+    height: 74vh;
+    object-fit: cover;
+  }
+
+  .greyBox {
+    display: inline-block;
+    background-color: grey;
+    width: 30vw;
+    height: 85vh;
+  }
+
+  .nextGreyBox {
+    width: 100vw;
+    height: 60vh;
+    background-color: lightblue;
+  }
+
+  /* Sektion .kintagAnimation */
+
+  .kintagHero {
+    padding: 0 8vw;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .kintagBg {
+    object-fit: cover;
+    object-position: left center;
+  }
+
+  .kintagContent {
+    text-align: left;
+    max-width: 450px;
+  }
+
+  .kintagContent h2 {
+    font-size: 7rem;
+    font-weight: 800;
+    margin: 0 0 1rem;
+  }
+  .kintagContent p {
+    margin: 0;
+    line-height: 1.6;
+    font-size: 1.5rem;
+  }
+  .appButtons {
+    justify-content: flex-start;
+  }
+
+  /* Section: Hållbarhet */
+  .recycleHeader {
+    color: var(--background-color);
+    font-size: 4rem;
+    margin-top: 15%;
+  }
+
+  .recycleBackground {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    object-fit: cover;
+    z-index: 1;
+  }
+
+  .argumentDesktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 40px;
+  }
+
+  .argument {
+    width: 25vw;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 0;
+    align-items: center;
+    margin-bottom: 5%;
+  }
+
+  .readMore {
+    width: 8vw;
+    border: none;
+  }
+
+  /* Section: Location */
+  section.location {
+    margin: 0;
+  }
+
+  .location {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .imgLocation {
+    width: 50vw;
+    aspect-ratio: 1;
+  }
+
+  .textLocation {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 50vw;
+    aspect-ratio: 1;
+    margin-left: 10%;
+  }
+  .textLocation h3 {
+    font-size: 84px;
+  }
+
+  /* Footer */
+  .footerLogoDesktop {
+    display: block;
+  }
+
+  .footerLogoMobile {
+    display: none;
+  }
+
+  .footerSocialsDesktop {
+    display: block;
+  }
+
+  .footerSocialsMobile {
+    display: none;
+  }
+
+  .footerProdukter {
+    display: block;
+  }
+
+  .footerTopBorder {
+    display: block;
+  }
+
+  footer {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  .footerBorders {
+    margin-top: 60px;
+  }
+
+  .footerBottomElements {
+    padding-bottom: 40px;
+    margin-left: -80px;
+    margin-right: -80px;
+  }
+
+  .footerBottomElements .footerThin {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 80px;
+  }
+
+  .footerBottomElements img {
+    padding-right: 80px;
+  }
+
+  .footerProdukter p {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .footerOmOss p {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .footerSupport {
+    margin-top: 0px;
+  }
+
+  .footerSupport p {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .footerOmOss {
+    margin-top: 0px;
+  }
+
+  .footerTextWall {
+    flex-direction: row;
+  }
+
+  .footerBottomElements {
+    flex-direction: row;
+  }
+
+  .newsletter h3 {
+    font-size: 3rem;
+  }
+
+  .newsletter .newsletterTopText {
+    font-size: 18px;
+  }
+
+  .newsletter .newsletterBottomText {
+    font-size: 12px;
+  }
+
+  .newsletter button {
+    width: 145px;
+    height: 48px;
+  }
+
+  #signUpBox {
+    width: 352px;
+    height: 48px;
+  }
+
+  input {
+    padding-left: 20px;
+  }
+
+  .mapMobile {
+    display: none;
+  }
+
+  .mapDesktop {
+    display: block;
+  }
+
+  .footerThin {
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+}

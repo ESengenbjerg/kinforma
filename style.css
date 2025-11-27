@@ -1,0 +1,789 @@
+:root {
+  --background-color: #fbfbf5;
+  --secondcolorgreen: #5d613c;
+  --color-lightblue: #add5f8;
+  --color-yellow: #ffd156;
+  --color-lavender: #d4c3dd;
+  --color-armygreen: #5d613c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fbfbf5;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+main {
+  position: relative;
+}
+
+/* NAVBAR */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.mobileNavbar {
+  background-color: white;
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 5%;
+  /* padding-right: 5%; */
+  z-index: 100;
+}
+
+.desktopNavbar {
+  display: none;
+}
+
+.logo {
+  width: 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.navFlex {
+  background-color: lightgrey;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 18px;
+  width: 80vw;
+  height: 7vh;
+  border-radius: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navFlex img {
+  height: 20px;
+  width: 20px;
+}
+
+.navFlex .arrow {
+  height: 8px;
+  width: 12px;
+}
+
+.langSelect {
+  display: flex;
+  flex-direction: row;
+}
+
+.langSelect img {
+  margin-top: 22px;
+  margin-left: 8px;
+}
+
+/* HEADER SECTION */
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 630px;
+}
+
+.backgroundHeader {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.headerText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translate(-50%, -50%);
+}
+
+header h2 {
+  font-weight: 900;
+  text-align: center;
+  z-index: 2;
+  font-size: 4rem;
+  margin: 7%;
+  color: #fbfbf5;
+}
+
+.headerP {
+  display: none;
+  color: #fbfbf5;
+}
+
+.headerButtons {
+  display: none;
+}
+
+/* CHAT BOT  */
+.chat-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.2s ease;
+  background-color: var(--background-color);
+  border-radius: 50%;
+  background-image: url("pictures/chat-bot.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+}
+
+/* KARUSELL */
+h2.nyheter {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.cards-wrapper {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding: 24px;
+  margin-top: 10%;
+  scroll-snap-type: x mandatory;
+}
+
+.card {
+  min-width: 80vw;
+  background-color: var(--background-color);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  scroll-snap-align: center;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  margin-bottom: 3%;
+}
+
+.card img {
+  width: 80vw;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.card h2 {
+  padding-left: 5%;
+}
+
+.card p {
+  padding: 5%;
+}
+
+/* SECTION: Jackan */
+.textJackaMobile {
+  width: 80vw;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.jackaHeaderMobile {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.sectionJacka {
+  background-color: var(--background-color);
+  width: 100vw;
+  height: 60vh;
+  position: relative;
+  margin-top: 10%;
+  margin-bottom: 20%;
+  overflow: hidden;
+}
+
+.greyJacket {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 200%;
+  object-fit: cover;
+}
+
+.jacketDot {
+  width: 25vw;
+  aspect-ratio: 1;
+}
+
+.item1 {
+  position: absolute;
+  top: 75%;
+  left: 5%;
+  z-index: 5;
+}
+
+.item2 {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.item3 {
+  position: absolute;
+  top: 75%;
+  right: 5%;
+}
+
+.sectionJacka button {
+  position: absolute;
+  bottom: 33%;
+  right: 6%;
+  width: 35vw;
+  height: 5vh;
+  background-color: var(--secondcolorgreen);
+  color: var(--background-color);
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 5px 19px grey;
+}
+
+/* SECTION: Produktvisning */
+.sectionTextProduktvisning {
+  display: none;
+}
+
+.textAboveProducts {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-left: 5%;
+  margin-right: 2.5%;
+}
+
+.textAboveProducts p,
+.textAboveProducts a {
+  font-size: 0.7rem;
+}
+
+section.produktvisning {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.productCard {
+  width: 90vw;
+  height: auto;
+  position: relative;
+}
+
+.productCardBorder {
+  border: 1px solid black;
+}
+
+.productCard img {
+  width: 80%;
+  aspect-ratio: 1;
+  margin: 0 auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 16px;
+  margin-bottom: 10%;
+}
+
+.produktText {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+}
+
+.productCard h3 {
+  font-size: 1rem;
+  margin-bottom: 10%;
+}
+
+.productCard button {
+  margin-top: 10%;
+}
+
+/* Color configurator */
+.configBox {
+  border: 1px solid black;
+  border-top: none;
+  height: 20vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.colorBox {
+  width: 20%;
+  aspect-ratio: 1;
+  border: 1px solid black;
+  gap: 10px;
+}
+
+.coatConfigRed,
+.charmConfigRed,
+.bitsConfigRed,
+.tagConfigRed,
+.patchesConfigRed {
+  background-color: var(--color-lightblue);
+}
+
+.coatConfigYellow,
+.charmConfigYellow,
+.bitsConfigYellow,
+.tagConfigYellow,
+.patchesConfigYellow {
+  background-color: var(--color-yellow);
+}
+
+.coatConfigGreen,
+.charmConfigGreen,
+.bitsConfigGreen,
+.tagConfigGreen,
+.patchesConfigGreen {
+  background-color: var(--color-lavender);
+}
+
+.coatConfigBlue,
+.charmConfigBlue,
+.bitsConfigBlue,
+.tagConfigBlue,
+.patchesConfigBlue {
+  background-color: var(--secondcolorgreen);
+}
+
+.productCard button {
+  background-color: var(--color-armygreen);
+  text-align: center;
+  width: 100%;
+  height: 47px;
+  border-radius: 4px;
+  color: var(--background-color);
+  margin-bottom: 10%;
+}
+
+.patchProduct .patchImage1 {
+  background-image: url("produkter/produktibld_patch_2.png");
+  background-size: cover;
+  background-position: center;
+  background-color: transparent !important;
+}
+
+.patchProduct .patchImage2 {
+  background-image: url("produkter/produktibld_patch_1.png");
+  background-size: cover;
+  background-position: center;
+  background-color: transparent !important;
+}
+
+/* Slideshow */
+.bildspel {
+  width: 100vw;
+  aspect-ratio: 3/4;
+  margin-bottom: 2.6%;
+  margin-left: 10%;
+}
+
+.bildspelImage {
+  width: 89%;
+  height: 65vh;
+  object-fit: cover;
+}
+
+#slideshow {
+  transition: opacity 0.5s ease;
+}
+
+/* KIN TAG */
+.greyBox {
+  display: none;
+}
+
+.karusell {
+  margin-bottom: 15%;
+}
+
+.kintagHero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.kintagBg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left center; /* produkten tydligt åt vänster */
+  z-index: 1;
+}
+
+.kintagContent {
+  position: relative;
+  z-index: 2;
+  max-width: 420px;
+  color: #000;
+  text-align: left;
+}
+
+.kintagContent h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0 0 1rem;
+}
+
+.kintagContent p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.appButtons {
+  margin-top: 1.8rem;
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.appButtons img {
+  display: block;
+  height: 40px;
+  width: auto;
+}
+
+/* Section: Hållbarhet */
+.recycle {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10%;
+  position: relative;
+}
+
+.recycleBackground {
+  display: none;
+}
+
+.recycleHeader {
+  text-align: center;
+  margin-bottom: 10%;
+  z-index: 3;
+}
+
+.argument {
+  width: 90vw;
+  border-radius: 16px;
+  box-shadow: 0 5px 19px grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 5%;
+  padding-left: 10%;
+  margin-bottom: 10%;
+  background-color: var(--secondcolorgreen);
+  color: var(--background-color);
+  z-index: 3;
+}
+
+.argument div {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.miniIcon {
+  width: 60px;
+  height: 60px;
+}
+
+.miniIcon img {
+  width: 100%;
+  height: auto;
+}
+
+.readMore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  width: 30vw;
+  height: 5vh;
+  background-color: var(--background-color);
+  z-index: 2;
+}
+
+/* SECTION: Newsletter */
+.newsletter {
+  background: url("/pictures/Frame 92.png");
+  background-size: cover;
+  width: 100vw;
+  height: auto;
+  background-color: grey;
+  padding: 10%;
+}
+
+.newsletter h3 {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+
+.newsletter p {
+  color: white;
+  text-align: center;
+  font-weight: 400;
+}
+
+.newsletter .newsletterTopText {
+  font-size: 12px;
+}
+
+.newsletter .newsletterBottomText {
+  font-size: 11px;
+}
+
+.newsletter button {
+  width: 96px;
+  height: 28px;
+  box-shadow: none;
+  border-radius: 0;
+  border: none;
+  background-color: white;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.signUp {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+#signUpBox {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  width: 202px;
+  height: 28px;
+}
+
+::placeholder {
+  color: white;
+  opacity: 0.5;
+}
+
+input {
+  padding-left: 5px;
+}
+
+/* SECTION: Location */
+section.location {
+  margin: 5%;
+}
+
+.location h3 {
+  font-size: 2rem;
+}
+
+.imgLocation {
+  width: 100%;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10%;
+}
+
+/* FOOTER */
+.footerLogoDesktop {
+  display: none;
+}
+
+.footerLogoMobile {
+  display: block;
+  width: 103.9px;
+  height: 16.46px;
+}
+
+.footerSocialsDesktop {
+  display: none;
+}
+
+.footerSocialsMobile {
+  display: block;
+  order: -1;
+  width: 54.85px;
+  padding-bottom: 10px;
+  margin-top: -15px;
+}
+
+.footerProdukter {
+  display: none;
+}
+
+.footerLogoDesktop {
+  display: none;
+}
+
+.footerLogoMobile {
+  display: block;
+  width: 103.9px;
+  height: 16.46px;
+}
+
+.footerSocialsDesktop {
+  display: none;
+}
+
+.footerSocialsMobile {
+  display: block;
+  order: -1;
+  width: 54.85px;
+  padding-bottom: 10px;
+  margin-top: -15px;
+}
+
+.footerProdukter {
+  display: none;
+}
+
+footer {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 5px;
+}
+
+.footerTopBorder {
+  border-top: 1px solid black;
+  width: 100vw;
+  padding-top: 70px;
+  margin-left: -80px;
+  display: none;
+}
+
+.footerBorders {
+  border-top: 1px solid black;
+  margin-top: 30px;
+}
+
+.footerBold {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.footerThin {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footerTextWall {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 60px;
+  margin-bottom: 120px;
+}
+
+.footerProdukter {
+  width: 149.67px;
+}
+
+.footerOmOss {
+  width: 149.67px;
+  margin-top: -40px;
+}
+
+.footerOmOss p {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.footerOmOss .footerThin {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.footerSupport {
+  width: 149.67px;
+  margin-top: -30px;
+  margin-bottom: -60px;
+}
+
+.footerSupport p {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.footerSupport .footerThin {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.footerBottomElements {
+  color: white;
+  background: url("/pictures/Frame 91.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 28px;
+  padding-bottom: 20px;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.footerBottomElements .footerThin {
+  font-size: 8px;
+  font-weight: 400;
+  margin: 0px;
+  padding: 0px;
+  padding-left: 20px;
+}
+
+.footerBottomElements img {
+  padding-left: 20px;
+}
+
+.textLocation h3 {
+  font-size: 32px;
+}
+
+.mapMobile {
+  display: block;
+}
+
+.mapDesktop {
+  display: none;
+}
